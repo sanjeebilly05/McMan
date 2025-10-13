@@ -1,0 +1,23 @@
+McDonalds Food For Thought:
+https://www.mcdfoodforthoughts.com/
+
+McDonalds Continue:
+<input type="submit" id="NextButton" name="NextButton" value="Continue" class="NextButton" aria-hidden="false">
+
+McDonalds Code 1:
+<input class="coupon-length-4 " type="text" autocomplete="off" id="CN1" name="CN1" aria-label="Input characters 1 through 4 of the survey code." maxlength="4" value="" aria-hidden="false">
+
+McDonalds Code 2:
+<input class="coupon-length-4 " type="text" autocomplete="off" id="CN2" name="CN2" aria-label="Input characters 5 through 8 of the survey code." maxlength="4" value="" aria-hidden="false">
+
+McDonalds Code 3:
+<input class="coupon-length-4 " type="text" autocomplete="off" id="CN3" name="CN3" aria-label="Input characters 9 through 12 of the survey code." maxlength="4" value="" aria-hidden="false">
+
+McDonalds Pound:
+<input class="coupon-length-3 " type="text" autocomplete="off" id="AmountSpent1" name="AmountSpent1" aria-label="Input Amount Spent pounds, euros or dollars." maxlength="3" value="" aria-hidden="false">
+
+McDonalds Pence:
+<input class="coupon-length-2 " type="text" autocomplete="off" id="AmountSpent2" name="AmountSpent2" aria-label="Input Amount Spent pence or cents." maxlength="2" value="" aria-hidden="false">
+
+McDonalds Start:
+<input type="submit" id="NextButton" name="NextButton" value="Start" class="NextButton" aria-hidden="false">
