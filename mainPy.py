@@ -6,8 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 
-waitTime = random.randint(3, 5
-                          )
+waitTime = random.randint(1, 2)
 
 print("Welcome to McMan!\nUse this program to autocomplete your survey, and get your offer!")
 print("Don't worry about capital letters, we have that covered! :)")
@@ -36,7 +35,7 @@ while True:
     else:
         print("Your code or price isn't right, please try again")
 
-print(" - ".join([part1, part2, part3]))
+# print(" - ".join([part1, part2, part3]))
 
 service = Service(executable_path="chromedriver.exe")
 driver = webdriver.Chrome(service = service)
@@ -66,9 +65,19 @@ time.sleep(waitTime)
 # Fill in pounds
 poundBox = driver.find_element(By.ID, "AmountSpent1")
 poundBox.send_keys(pounds)
+time.sleep(waitTime)
 
 # Fill in pence
 penceBox = driver.find_element(By.ID, "AmountSpent2")
 penceBox.send_keys(pence)
+time.sleep(waitTime)
+
+# Start
+driver.find_element(By.ID, "NextButton").click() 
+time.sleep(waitTime)
+
+#Take Away
+driver.find_element(By.CLASS_NAME, "radioSimpleInput").click()
+time.sleep(waitTime)
 
 driver.quit()
