@@ -28,7 +28,22 @@
 
 <input class="coupon-length-2 " type="text" autocomplete="off" id="AmountSpent2" name="AmountSpent2" aria-label="Input Amount Spent pence or cents." maxlength="2" value="" aria-hidden="false">
 
+satisfiedbox:
+<textarea name="S000034" id="S000034" maxlength="1200" cols="80" rows="8" aria-labelledby="textS000034"></textarea>
 
+Tastes good
+
+firstname:
+<input type="text" name="S000068" value="" id="S000068" size="30" maxlength="100" aria-labelledby="textS000068" aria-hidden="false">
+
+secondname:
+<input type="text" name="S000073" value="" id="S000073" size="45" maxlength="100" aria-labelledby="textS000073" aria-hidden="false">
+
+email:
+<input type="text" name="S000070" value="" id="S000070" size="45" maxlength="100" aria-labelledby="textS000070" aria-hidden="false">
+
+confirmemail:
+<input type="text" name="S000071" value="" id="S000071" size="45" maxlength="100" aria-labelledby="textS000071" aria-hidden="false">
 
 ## Options
 
@@ -255,6 +270,38 @@
 ### **HandedOrder:**
 
 <label for="R000553" id="textR000553" aria-hidden="false">The person who handed me my order</label>
+
+StaffFriendly:
+<label for="R000573" id="textR000573" aria-hidden="false">They were kind and polite throughout</label>
+
+RecogniseStaff:
+<label for="R000054.2" id="textR000054.2" aria-hidden="false" class="radioSimpleInput">
+                    <span>No</span>
+                  </label>
+
+VisitMcDonalds
+<td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
+                  <input type="radio" name="R000031" value="5" id="R000031.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000031.5" class="radioSimpleInput">‍</label>
+                </td>
+
+<input type="radio" name="R000031" value="5" id="R000031.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+
+RecommendMcDonalds
+<td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
+                  <input type="radio" name="R000030" value="5" id="R000030.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000030.5" class="radioSimpleInput">‍</label>
+                </td>
+<input type="radio" name="R000030" value="5" id="R000030.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+
+ReturnToMcDonalds
+<td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
+                  <input type="radio" name="R000029" value="5" id="R000029.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000029.5" class="radioSimpleInput">‍</label>
+                </td>
+<input type="radio" name="R000029" value="5" id="R000029.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+
+EmailRedeem:
+<label for="R000383.1" id="textR000383.1" aria-hidden="false" class="radioSimpleInput">
+                    <span>By email (recommended)</span>
+                  </label>
 
 ## Buttons
 
