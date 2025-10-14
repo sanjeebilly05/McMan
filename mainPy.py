@@ -6,17 +6,20 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 
-waitTime = random.randint(3, 5)
+waitTime = random.randint(3, 5
+                          )
 
 print("Welcome to McMan!\nUse this program to autocomplete your survey, and get your offer!")
 print("Don't worry about capital letters, we have that covered! :)")
 while True:
+    pounds = input("Enter the pounds of the meal: ").strip()
+    pence = input("Enter the pence of your meal: ").strip()
     part1 = input("Enter your first code: ").strip().upper()
     part2 = input("Enter your second code: ").strip().upper()
     part3 = input("Enter your third code: ").strip().upper()
 
-    if len(part1) == len(part2) == len(part3) == 4:
-        print("Your code is " + " - ".join([part1, part2, part3]))
+    if len(pounds) < 4 and len(pence) < 3 and len(part1) == len(part2) == len(part3) == 4:
+        print("Your code is " + " - ".join([part1, part2, part3]) + " and you have spent " + "£" + pounds + "." + pence)
         while True:
             confirm = input("Is this code correct? (y/n): ").strip().lower()
             if confirm == "y":
@@ -31,7 +34,7 @@ while True:
         if confirm == "y":
             break
     else:
-        print("Your code isn't right, please try again")
+        print("Your code or price isn't right, please try again")
 
 print(" - ".join([part1, part2, part3]))
 
@@ -59,5 +62,13 @@ time.sleep(waitTime)
 code3 = driver.find_element(By.ID, "CN3")
 code3.send_keys(part3)
 time.sleep(waitTime)
+
+# Fill in pounds
+poundBox = driver.find_element(By.ID, "AmountSpent1")
+poundBox.send_keys(pounds)
+
+# Fill in pence
+penceBox = driver.find_element(By.ID, "AmountSpent2")
+penceBox.send_keys(pence)
 
 driver.quit()
