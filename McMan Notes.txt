@@ -21,3 +21,20 @@ McDonalds Pence:
 
 McDonalds Start:
 <input type="submit" id="NextButton" name="NextButton" value="Start" class="NextButton" aria-hidden="false">
+
+McDonalds Collected at counter to take away
+<label for="R000005.2" id="textR000005.2" aria-hidden="false" class="radioSimpleInput" style="background-position: 0px -36px;">
+                    <span>Collected at counter to take away</span>
+                  </label>
+
+McDonalds Next
+<input type="submit" id="NextButton" value="Next" class="NextButton" aria-hidden="false">
+
+Highly Satisfied
+<td class="Opt5 inputtyperbloption" tabindex="-1">
+                  <input type="radio" name="R000002" value="5" id="R000002.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0"><label for="R000002.5" class="radioSimpleInput">‍</label>
+                </td>
+
+Next
+<input type="submit" id="NextButton" value="Next" class="NextButton">
+
