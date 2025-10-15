@@ -6,8 +6,25 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
+import json
 
-waitTime = random.randint(1, 2)
+with open("stuff.txt", "r") as f:
+    data = json.load(f)
+
+# print(json.dumps(data["fill_in_boxes"], indent=4))
+
+code2_id = data["fill_in_boxes"]["code2"]["id"]
+print(code2_id)
+
+price_high_id = data["options"]["price_high"]["id"]
+print(price_high_id)
+
+next_button = data["buttons"]["next_button"]["id"]
+print(next_button)
+
+
+
+# waitTime = random.randint(1, 2)
 
 # print("Welcome to McMan!\nUse this program to autocomplete your survey, and get your offer!")
 # print("Don't worry about capital letters, we have that covered! :)")
@@ -38,88 +55,88 @@ waitTime = random.randint(1, 2)
 
 # # print(" - ".join([part1, part2, part3]))
 
-part1 = "CLXW"
-part2 = "G7LM"
-part3 = "ZTTP"
-pounds = 4
-pence = 59
+# part1 = "CLXW"
+# part2 = "G7LM"
+# part3 = "ZTTP"
+# pounds = 4
+# pence = 59
 
-service = Service(executable_path="chromedriver.exe")
-driver = webdriver.Chrome(service = service)
-driver.get("https://www.mcdfoodforthoughts.com/")
+# service = Service(executable_path="chromedriver.exe")
+# driver = webdriver.Chrome(service = service)
+# driver.get("https://www.mcdfoodforthoughts.com/")
 
-time.sleep(waitTime)
+# time.sleep(waitTime)
 
-# Continue
-try:
-    main = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "NextButton"))
-    )
-    driver.find_element(By.ID, "NextButton").click()
-except:
-    driver.quit()
+# # Continue
+# try:
+#     main = WebDriverWait(driver, 10).until(
+#         EC.presence_of_element_located((By.ID, "NextButton"))
+#     )
+#     driver.find_element(By.ID, "NextButton").click()
+# except:
+#     driver.quit()
 
-time.sleep(waitTime)
+# time.sleep(waitTime)
 
-# Fill in code 1
-code1 = driver.find_element(By.ID, "CN1")
-code1.send_keys(part1)
-time.sleep(waitTime)
+# # Fill in code 1
+# code1 = driver.find_element(By.ID, "CN1")
+# code1.send_keys(part1)
+# time.sleep(waitTime)
 
-# Fill in code 2
-code2 = driver.find_element(By.ID, "CN2")
-code2.send_keys(part2)
-time.sleep(waitTime)
+# # Fill in code 2
+# code2 = driver.find_element(By.ID, "CN2")
+# code2.send_keys(part2)
+# time.sleep(waitTime)
 
-# Fill in code 3
-code3 = driver.find_element(By.ID, "CN3")
-code3.send_keys(part3)
-time.sleep(waitTime)
+# # Fill in code 3
+# code3 = driver.find_element(By.ID, "CN3")
+# code3.send_keys(part3)
+# time.sleep(waitTime)
 
-# Fill in pounds
-poundBox = driver.find_element(By.ID, "AmountSpent1")
-poundBox.send_keys(pounds)
-time.sleep(waitTime)
+# # Fill in pounds
+# poundBox = driver.find_element(By.ID, "AmountSpent1")
+# poundBox.send_keys(pounds)
+# time.sleep(waitTime)
 
-# Fill in pence
-penceBox = driver.find_element(By.ID, "AmountSpent2")
-penceBox.send_keys(pence)
-time.sleep(waitTime)
+# # Fill in pence
+# penceBox = driver.find_element(By.ID, "AmountSpent2")
+# penceBox.send_keys(pence)
+# time.sleep(waitTime)
 
-# Start
-driver.find_element(By.ID, "NextButton").click() 
-time.sleep(waitTime)
+# # Start
+# driver.find_element(By.ID, "NextButton").click() 
+# time.sleep(waitTime)
 
-#Take Away
-driver.find_element(By.CLASS_NAME, "radioSimpleInput").click()
-time.sleep(waitTime)
+# #Take Away
+# driver.find_element(By.CLASS_NAME, "radioSimpleInput").click()
+# time.sleep(waitTime)
 
-# Next
-driver.find_element(By.ID, "NextButton").click()
-time.sleep(waitTime)
+# # Next
+# driver.find_element(By.ID, "NextButton").click()
+# time.sleep(waitTime)
 
-# Highly Satisfied
-driver.find_element(By.CLASS_NAME, "Opt5")
-time.sleep(waitTime)
+# # Highly Satisfied
+# driver.find_element(By.CLASS_NAME, "Opt5")
+# time.sleep(waitTime)
 
-# Next
-driver.find_element(By.ID, "NextButton").click() 
-time.sleep(waitTime)
+# # Next
+# driver.find_element(By.ID, "NextButton").click() 
+# time.sleep(waitTime)
 
-# <label for="R000002.5" class="radioSimpleInput">‍</label>
-# The ease of placing your order
-driver.find_element(By.ID, "R000016.5").click()
+# # <label for="R000002.5" class="radioSimpleInput">‍</label>
+# # The ease of placing your order
+# driver.find_element(By.ID, "R000016.5").click()
 
-# The quality of your food and drink
-driver.find_element(By.ID, "R000008.5").click()
+# # The quality of your food and drink
+# driver.find_element(By.ID, "R000008.5").click()
 
-# How well your order was packaged
-driver.find_element(By.ID, "R000144.5").click()
+# # How well your order was packaged
+# driver.find_element(By.ID, "R000144.5").click()
 
-# The friendliness of the staff
-driver.find_element(By.ID, "R000019.5").click()
+# # The friendliness of the staff
+# driver.find_element(By.ID, "R000019.5").click()
 
-# The temperature of your food or drink
-driver.find_element(By.ID, "R000010.5").click()
+# # The temperature of your food or drink
+# driver.find_element(By.ID, "R000010.5").click()
 
-driver.quit()
+# driver.quit()
