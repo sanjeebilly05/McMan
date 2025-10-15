@@ -77,9 +77,9 @@ ease_high:
 
 <td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
 
-<input type="radio" name="R000010" value="5" id="R000010.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000010.5" class="radioSimpleInput">‍</label> </td>
+<input type="radio" name="R000016" value="5" id="R000016.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000016.5" class="radioSimpleInput">‍</label> </td>
 
-<input type="radio" name="R000010" value="5" id="R000010.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+<input type="radio" name="R000016" value="5" id="R000016.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
 
 
 
@@ -87,10 +87,9 @@ taste_high:
 
 <td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
 
-<input type="radio" name="R000020" value="5" id="R000020.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000020.5" class="radioSimpleInput">‍</label> </td>
+<input type="radio" name="R000009" value="5" id="R000009.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000009.5" class="radioSimpleInput">‍</label> </td>
 
-<input type="radio" name="R000020" value="5" id="R000020.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
-
+<input type="radio" name="R000009" value="5" id="R000009.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
 
 
 clean_high:
@@ -100,16 +99,6 @@ clean_high:
 <input type="radio" name="R000020" value="5" id="R000020.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000020.5" class="radioSimpleInput">‍</label> </td>
 
 <input type="radio" name="R000020" value="5" id="R000020.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
-
-
-
-ease_high:
-
-<td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
-
-<input type="radio" name="R000016" value="5" id="R000016.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000016.5" class="radioSimpleInput">‍</label> </td>
-
-<input type="radio" name="R000016" value="5" id="R000016.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
 
 
 
@@ -193,6 +182,15 @@ price_high:
 
 
 
+temperature_high:
+<td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
+
+<input type="radio" name="R000010" value="5" id="R000010.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000010.5" class="radioSimpleInput">‍</label> </td>
+
+<input type="radio" name="R000010" value="5" id="R000010.5" aria-labelledby="HighlySatisfiedNeitherDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+
+
+
 accurate_yes:
 
 <td class="Opt1 inputtyperbloption" tabindex="-1">
@@ -239,24 +237,41 @@ wrap_high:
 
 
 
-handed_order:
+handled_order:
 
 <label for="R000553" id="textR000553" aria-hidden="false">The person who handed me my order</label>
 
+
+
 staff_friendly:
 <label for="R000573" id="textR000573" aria-hidden="false">They were kind and polite throughout</label>
+
+
 
 recognise_staff:
 <label for="R000054.2" id="textR000054.2" aria-hidden="false" class="radioSimpleInput">
                     <span>No</span>
                   </label>
 
+
+party_mcdonalds:
+<input type="checkbox" name="R000057" value="1" id="R000057" class="simpleInput sr-only" aria-hidden="false">
+<div id="FNSR000057" class="cataOption" aria-labelledby="textR000057" aria-hidden="false" aria-checked="false">
+                <span class="checkboxholder">
+                  <input type="checkbox" name="R000057" value="1" id="R000057" class="simpleInput sr-only" aria-hidden="false"><span class="checkboxSimpleInput"><img src="Common/images/blank.png" height="1" width="0" alt="" tabindex="-1" aria-hidden="true"></span>
+                </span>
+                <label for="R000057" id="textR000057" aria-hidden="false">I visited by myself</label>
+              </div>
+
+
 visit_mcdonalds:
 <td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
-                  <input type="radio" name="R000031" value="5" id="R000031.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000031.5" class="radioSimpleInput">‍</label>
+                  <input type="radio" name="R000031" value="5" id="" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000031.5" class="radioSimpleInput">‍</label>
                 </td>
 
 <input type="radio" name="R000031" value="5" id="R000031.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
+
+
 
 recommend_mcdonalds:
 <td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
@@ -264,16 +279,30 @@ recommend_mcdonalds:
                 </td>
 <input type="radio" name="R000030" value="5" id="R000030.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
 
+
+
 return_to_mcdonalds:
 <td class="Opt5 inputtyperbloption" tabindex="-1" aria-hidden="false">
                   <input type="radio" name="R000029" value="5" id="R000029.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false"><label for="R000029.5" class="radioSimpleInput">‍</label>
                 </td>
 <input type="radio" name="R000029" value="5" id="R000029.5" aria-labelledby="HighlyLikelyDESC5" class="simpleInput rbl sr-only" role="radio" aria-checked="false" tabindex="0" aria-hidden="false">
 
+
+
 email_redeem:
 <label for="R000383.1" id="textR000383.1" aria-hidden="false" class="radioSimpleInput">
                     <span>By email (recommended)</span>
                   </label>
+
+gender:
+<input type="radio" name="R000064" value="2" id="R000064.2" class="simpleInput rblv sr-only" tabindex="-1" role="radio" aria-checked="false" aria-describedby="" aria-hidden="false">
+
+
+
+age:
+<input type="radio" name="R000065" value="3" id="R000065.3" class="simpleInput rblv sr-only" tabindex="0" role="radio" aria-checked="true" aria-describedby="" aria-hidden="false">
+
+
 
 Buttons
 
