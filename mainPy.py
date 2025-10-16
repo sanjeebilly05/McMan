@@ -11,7 +11,10 @@ import json
 with open("stuff.txt", "r") as f:
     data = json.load(f)
 
-# print(json.dumps(data["fill_in_boxes"], indent=4))
+
+service = Service(executable_path="chromedriver.exe")
+driver = webdriver.Chrome(service = service)
+driver.get("https://www.mcdfoodforthoughts.com/")
 
 code2_id = data["fill_in_boxes"]["code2"]["id"]
 print(code2_id)
@@ -22,8 +25,11 @@ print(price_high_id)
 next_button = data["buttons"]["next_button"]["id"]
 print(next_button)
 
+# def search_fill_in_box():
 
+# def search_options():
 
+# def search_button():
 # waitTime = random.randint(1, 2)
 
 # print("Welcome to McMan!\nUse this program to autocomplete your survey, and get your offer!")
@@ -60,10 +66,6 @@ print(next_button)
 # part3 = "ZTTP"
 # pounds = 4
 # pence = 59
-
-# service = Service(executable_path="chromedriver.exe")
-# driver = webdriver.Chrome(service = service)
-# driver.get("https://www.mcdfoodforthoughts.com/")
 
 # time.sleep(waitTime)
 
