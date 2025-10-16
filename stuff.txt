@@ -1,19 +1,25 @@
 {
-    "fill_in_boxes": {
+    "fill_in_boxes": 
+    {
         "code1": {
-            "id": "CN1"
+            "id": "CN1",
+            "default_message": "CLXW"
         },
         "code2": {
-            "id": "CN2"
+            "id": "CN2",
+            "default_message": "G7LM"
         },
         "code3": {
-            "id": "CN3"
+            "id": "CN3",
+            "default_message": "ZTTP"
         },
         "pounds": {
-            "id": "AmountSpent1"
+            "id": "AmountSpent1",
+            "default_message": "4"
         },
         "pence": {
-            "id": "AmountSpent2"
+            "id": "AmountSpent2",
+            "default_message": "59"
         },
         "satisfied_box": {
             "id": "S000034",
@@ -38,7 +44,7 @@
     },
     "options": {
         "how_you_dined": {
-            "id": "textR000005"
+            "id": "textR000005.2"
         },
         "experience_high": {
             "id": "R000002.5"
