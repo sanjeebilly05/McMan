@@ -51,8 +51,10 @@ while True:
 
 print(" - ".join([part1, part2, part3]))
 
+chrome_option = webdriver.ChromeOptions()
+chrome_option.add_argument('--incognito')
 service = Service(executable_path="chromedriver.exe")
-driver = webdriver.Chrome(service = service)
+driver = webdriver.Chrome(service = service, options = chrome_option)
 driver.get("https://www.mcdfoodforthoughts.com/")
 
 while True:
