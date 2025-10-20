@@ -46,9 +46,7 @@ Options
 
 how_you_dined
 
-//*[@id="R000005.2"]
-
-
+//*[@id="R000005.2"]/td[1]
 
 experience_high:
 
@@ -77,7 +75,6 @@ pack_high:
 N/A:
 
 //*[@id="R000018.9"]
-
 
 speed_high:
 
@@ -118,6 +115,8 @@ problem_no:
 grilled_chicken_wrap:
 
 //*[@id="R000152"]
+            //*[@id="FNSR000152"]
+            //*[@id="textR000152"]
 
 wrap_high:
 
@@ -126,10 +125,14 @@ wrap_high:
 handled_order:
 
 //*[@id="R000553"]
+//*[@id="FNSR000553"]
+//*[@id="textR000553"]
 
 staff_friendly:
 
 //*[@id="R000573"]
+//*[@id="FNSR000573"]
+//*[@id="textR000573"]
 
 recognise_staff:
 
@@ -169,11 +172,7 @@ continue:
 
 //*[@id="NextButton"]
 
-
-
-
 next:
-
 
 //*[@id="NextButton"]
 
