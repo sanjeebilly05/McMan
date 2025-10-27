@@ -10,14 +10,38 @@ import json
 from tkinter import*
 
 window = Tk()
-window.geometry("420x402")
+window.geometry("600x600")
 window.title("McMan")
 
 icon = PhotoImage(file="images/mrDonald.png")
 window.iconphoto(True, icon)
 window.config(background = "#ffd700")
+
+header1 = Label(window, 
+                text = "Welcome to McMan, the survey completor!", 
+                font = ("Arial", 20),
+                fg = "#db1020",
+                bg = "#ffd700")
+header1.pack()
+
+codeMessage1 = Label(window, 
+                      text = "Code 1", 
+                      font = ("Arial", 10),
+                      fg = "#db1020",
+                      bg = "#ffd700",
+                      padx = 10,
+                      pady = 10)
+codeMessage1.pack()
+
+codeInput1 = Entry(window,
+                   width = 4,
+                   bg = "white",
+                   fg = "black")
+
+codeInput1.pack()
 window.mainloop()
 
+# 
 # with open("stuff.txt", "r") as f:
 #     data = json.load(f)
 
