@@ -9,8 +9,10 @@ import random
 import json
 from tkinter import*
 
-
-
+window = Tk()
+window.geometry("420x402")
+window.title("McMan")
+window.mainloop()
 
 # with open("stuff.txt", "r") as f:
 #     data = json.load(f)
