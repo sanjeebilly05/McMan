@@ -67,6 +67,7 @@ while True:
         except:
             print(f"{box["XPath"]} not found")
 
+
     for option in data["options"].values():
         try:
             element = driver.find_element(By.XPATH, option["XPath"])

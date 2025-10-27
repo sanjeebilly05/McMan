@@ -63,11 +63,11 @@
         },
         "ease_high": {
             "id": "R000016.5",
-            "XPath": "//*[@id='R000016.5']"
+            "XPath": "//*[@id='R000016']"
         },
         "taste_high": {
             "id": "R000009.5",
-            "XPath": "//*[@id='R000009.5']"
+            "XPath": "//*[@id='FNSR000009']/td[1]/label"
         },
         "clean_high": {
             "id": "R000020.5",
