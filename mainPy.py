@@ -12,6 +12,10 @@ from tkinter import*
 window = Tk()
 window.geometry("420x402")
 window.title("McMan")
+
+icon = PhotoImage(file="images/mrDonald.png")
+window.iconphoto(True, icon)
+window.config(background = "#ffd700")
 window.mainloop()
 
 # with open("stuff.txt", "r") as f:
