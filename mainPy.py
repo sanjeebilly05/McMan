@@ -9,6 +9,11 @@ import random
 import json
 from tkinter import*
 
+def submit():
+    code1 = codeInput1.get()
+    print(code1)
+
+
 window = Tk()
 window.geometry("600x600")
 window.title("McMan")
@@ -22,23 +27,69 @@ header1 = Label(window,
                 font = ("Arial", 20),
                 fg = "#db1020",
                 bg = "#ffd700")
-header1.pack()
 
-codeMessage1 = Label(window, 
+message1 = Label(window, 
                       text = "Code 1", 
                       font = ("Arial", 10),
                       fg = "#db1020",
                       bg = "#ffd700",
                       padx = 10,
                       pady = 10)
-codeMessage1.pack()
+message1.place(relx=0.17, rely=0.1, anchor = "center")
+
+message2 = Label(window, 
+                      text = "Code 2", 
+                      font = ("Arial", 10),
+                      fg = "#db1020",
+                      bg = "#ffd700",
+                      padx = 10,
+                      pady = 10)
+message2.place(relx=0.5, rely=0.1, anchor = "center")
+
+message3 = Label(window, 
+                      text = "Code 3", 
+                      font = ("Arial", 10),
+                      fg = "#db1020",
+                      bg = "#ffd700",
+                      padx = 10,
+                      pady = 10)
+message3.place(relx=0.83, rely=0.1, anchor = "center")
 
 codeInput1 = Entry(window,
                    width = 4,
                    bg = "white",
                    fg = "black")
+codeInput1.place(relx=0.17, rely=0.17, anchor = "center")
 
-codeInput1.pack()
+codeInput2 = Entry(window,
+                   width = 4,
+                   bg = "white",
+                   fg = "black")
+codeInput2.place(relx=0.5, rely=0.17, anchor = "center")
+
+codeInput3 = Entry(window,
+                   width = 4,
+                   bg = "white",
+                   fg = "black")
+codeInput3.place(relx=0.83, rely=0.17, anchor = "center")
+
+submit = Button(window, 
+                text = "submit", 
+                command = submit)
+
+poundsInput = Entry(window,
+                    width = 4,
+                    bg = "white",
+                    fg = "black")
+poundsInput.place(x=450, y=500)
+
+penceInput = Entry(window,
+                   width = 4,
+                   bg = "white",
+                   fg = "black")
+
+header1.pack()
+submit.pack(side="bottom")
 window.mainloop()
 
 # 
