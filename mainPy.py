@@ -22,6 +22,12 @@ icon = PhotoImage(file="images/mrDonald.png")
 window.iconphoto(True, icon)
 window.config(background = "#ffd700")
 
+reciept = PhotoImage(file="images/reciept.png")
+resizedReciept = reciept.zoom(0.5)
+recieptLabel = Label(window, image=resizedReciept, bg = "#ffd700")
+recieptLabel.place(relx=0.5, rely=0.3, anchor="center")
+
+
 header1 = Label(window, 
                 text = "Welcome to McMan, the survey completor!", 
                 font = ("Arial", 20),
