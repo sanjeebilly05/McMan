@@ -8,6 +8,7 @@ import time
 import random
 import json
 from tkinter import*
+from PIL import Image, ImageTk
 
 def submit():
     code1 = codeInput1.get()
@@ -22,10 +23,9 @@ icon = PhotoImage(file="images/mrDonald.png")
 window.iconphoto(True, icon)
 window.config(background = "#ffd700")
 
-reciept = PhotoImage(file="images/reciept.png")
-resizedReciept = reciept.zoom(0.5)
-recieptLabel = Label(window, image=resizedReciept, bg = "#ffd700")
-recieptLabel.place(relx=0.5, rely=0.3, anchor="center")
+reciept =   ImageTk.PhotoImage(Image.open("images/reciept.png").resize((200, 300)))
+recieptLabel = Label(window, image=reciept, bg = "#ffd700")
+recieptLabel.place(relx=0.5, y=350, anchor="center")
 
 
 header1 = Label(window, 
